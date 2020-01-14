@@ -1,0 +1,65 @@
+{
+  "workflow": {
+    "unique_name": "definition_workflow_01CUAKMN98CT02lxJjF1L4KKiRnQXgelrtO",
+    "name": "new",
+    "title": "new",
+    "type": "generic.workflow",
+    "base_type": "workflow",
+    "variables": null,
+    "properties": {
+      "atomic": {
+        "is_atomic": false
+      },
+      "delete_workflow_instance": false,
+      "display_name": "new",
+      "target": {
+        "execute_on_target_group": false,
+        "execute_on_workflow_target": false,
+        "no_target": true,
+        "specify_on_workflow_start": false
+      }
+    },
+    "object_type": "definition_workflow",
+    "actions": [
+      {
+        "unique_name": "definition_activity_01CUB8BG2IYVB5IiaSkvGN14fQ4NGvkNAg3",
+        "name": "Wait For Event",
+        "title": "Wait For Event",
+        "type": "task.wait_for_event",
+        "base_type": "activity",
+        "properties": {
+          "continue_on_failure": false,
+          "display_name": "Wait For Event",
+          "event_info": {
+            "add_event": false,
+            "existing_event_info": {
+              "event_id": "$global.variable_01CRWGMVKS8K30gnH6ytozKzfVbZIfXbq4A.global.variable_01CRWGMVKS8K30gnH6ytozKzfVbZIfXbq4A$",
+              "override_event_criteria": false
+            },
+            "use_existing_event": true
+          },
+          "event_timeout": 20,
+          "event_type": "approval_task.event",
+          "skip_execution": false
+        },
+        "object_type": "definition_activity"
+      }
+    ],
+    "categories": [
+      "category_1BMfMXSnJMyt5Ihqi7rWJr5N8cf"
+    ]
+  },
+  "variables": {
+    "variable_01CRWGMVKS8K30gnH6ytozKzfVbZIfXbq4A": {
+      "unique_name": "variable_01CRWGMVKS8K30gnH6ytozKzfVbZIfXbq4A",
+      "properties": {
+        "value": "01CRWFO6KJ3A50AbSuoSa52iI2g9lM09Ikw",
+        "scope": "global",
+        "name": "appr event",
+        "type": "datatype.string",
+        "is_required": false
+      },
+      "object_type": "variable"
+    }
+  }
+}
