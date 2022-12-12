@@ -31,7 +31,7 @@
           "continue_on_failure": false,
           "display_name": "Sleep",
           "skip_execution": false,
-          "sleep_interval": 2
+          "sleep_interval": 3
         },
         "object_type": "definition_activity"
       }
