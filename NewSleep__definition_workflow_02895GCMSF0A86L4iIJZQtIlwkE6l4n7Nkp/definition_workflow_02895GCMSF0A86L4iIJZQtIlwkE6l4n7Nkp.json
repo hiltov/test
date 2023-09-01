@@ -17,6 +17,13 @@
       },
       "target": {
         "no_target": true
+      },
+      "wf_metadata": {
+        "coa": {
+          "observable_types": [
+            "ip"
+          ]
+        }
       }
     },
     "object_type": "definition_workflow",
@@ -38,12 +45,15 @@
     ],
     "categories": [
       "category_1BMfMXSnJMyt5Ihqi7rWJr5N8cf"
-    ]
-  },
-  "metadata": {
-    "flags": [
-      "third-party",
-      "XDR"
-    ]
+    ],
+    "metadata": {
+      "coa": {
+        "observable_types": null
+      },
+      "flags": [
+        "third-party",
+        "XDR"
+      ]
+    }
   }
 }
