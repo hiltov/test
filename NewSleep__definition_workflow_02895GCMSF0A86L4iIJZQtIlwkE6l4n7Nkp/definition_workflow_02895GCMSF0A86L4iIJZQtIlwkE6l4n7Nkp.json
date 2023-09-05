@@ -21,7 +21,7 @@
       "wf_metadata": {
         "coa": {
           "observable_types": [
-            "ipv6"
+            "ip"
           ]
         }
       }
